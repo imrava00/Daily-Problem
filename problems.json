@@ -4,6 +4,6 @@
     "question": "Find the number of positive integers $n \\le 2026$ for which $n^2 + 7n + 12$ can be written in the form $k^2 + k$, where $k$ is a positive integer.",
     "hint": "Multiply both sides by 4 to complete the square on both expressions.",
     "answer": "2026",
-    "solution": "<b>Step 1: Complete the square.</b><br>Multiply both sides of $n^2 + 7n + 12 = k^2 + k$ by $4$:<br>$$4n^2 + 28n + 48 = 4k^2 + 4k$$<br>$$(2n + 7)^2 - 1 = (2k + 1)^2 - 1$$<br><br><b>Step 2: Solve for $k$.</b><br>$$\\implies (2n + 7)^2 = (2k + 1)^2$$<br>Since $n, k > 0$, take the positive square root:<br>$$2n + 7 = 2k + 1 \\implies k = n + 3$$<br><br><b>Step 3: Count valid solutions in the bounded domain.</b><br>For every positive integer $n$, $k = n + 3$ is automatically a valid positive integer.<br><br>Since $n$ is bounded by $1 \\le n \\le 2026$, there are exactly $\mathbf{2026}$ valid values for $n$."
+    "solution": "<b>Step 1: Complete the square.</b><br>Multiply both sides of $n^2 + 7n + 12 = k^2 + k$ by $4$:<br>$$4n^2 + 28n + 48 = 4k^2 + 4k$$<br>$$(2n + 7)^2 - 1 = (2k + 1)^2 - 1$$<br><br><b>Step 2: Solve for $k$.</b><br>$$\\implies (2n + 7)^2 = (2k + 1)^2$$<br>Since $n, k > 0$, take the positive square root:<br>$$2n + 7 = 2k + 1 \\implies k = n + 3$$<br><br><b>Step 3: Count valid solutions in the bounded domain.</b><br>For every positive integer $n$, $k = n + 3$ is automatically a valid positive integer.<br><br>Since $n$ is bounded by $1 \\le n \\le 2026$, there are exactly $2026$ valid values for $n$."
   }
 }
