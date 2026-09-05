@@ -12,5 +12,5 @@
     "hint": "Simplify the base $2026$ using modular arithmetic modulo $7$.",
     "answer": "6",
     "solution": "Reduce $2026$ modulo $7$: $2026 = 7 \\times 289 + 3 \\implies 2026 \\equiv 3 \\pmod 7$. <br><br> We need $3^n \\equiv 1 \\pmod 7$. <br><br> Testing powers of $3$: <br> • $3^1 \\equiv 3 \\pmod 7$ <br> • $3^2 \\equiv 2 \\pmod 7$ <br> • $3^3 \\equiv 6 \\pmod 7$ <br> • $3^4 \\equiv 4 \\pmod 7$ <br> • $3^5 \\equiv 5 \\pmod 7$ <br> • $3^6 \\equiv 1 \\pmod 7$ <br><br> Thus, the smallest positive integer is $n = \\mathbf{6}$."
-  },
+  }
 }
