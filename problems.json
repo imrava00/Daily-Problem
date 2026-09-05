@@ -1,156 +1,16 @@
 {
   "2026-09-05": {
-    "topic": "Algebra",
-    "question": "Evaluate: <br><br> $$\\frac{2023^2 + 2123^2 - 2 \\times 2023 \\times 2123}{25}$$",
-    "hint": "Recognize the perfect square identity $a^2 - 2ab + b^2 = (a - b)^2$.",
-    "answer": "400",
-    "solution": "Let $a = 2123$ and $b = 2023$. The numerator is $(a - b)^2 = (2123 - 2023)^2 = 100^2 = 10000$. <br><br> Dividing by $25$: $\\frac{10000}{25} = \\mathbf{400}$."
+    "topic": "Sequences & Telescoping Products",
+    "question": "Evaluate the following product: <br><br> $$\\left(1 - \\frac{1}{2^2}\\right)\\left(1 - \\frac{1}{3^2}\\right)\\left(1 - \\frac{1}{4^2}\\right) \\cdots \\left(1 - \\frac{1}{2026^2}\\right)$$",
+    "hint": "Factor each term using the difference of squares identity $1 - \\frac{1}{k^2} = \\left(1 - \\frac{1}{k}\\right)\\left(1 + \\frac{1}{k}\\right) = \\frac{k-1}{k} \\cdot \\frac{k+1}{k}$.",
+    "answer": "2027/4052",
+    "solution": "Rewrite the general term: $1 - \\frac{1}{k^2} = \\frac{k^2 - 1}{k^2} = \\frac{(k-1)(k+1)}{k^2}$. <br><br> Expanding the entire product: <br> $$\\left(\\frac{1 \\cdot 3}{2 \\cdot 2}\\right) \\left(\\frac{2 \\cdot 4}{3 \\cdot 3}\\right) \\left(\\frac{3 \\cdot 5}{4 \\cdot 4}\\right) \\cdots \\left(\\frac{2025 \\cdot 2027}{2026 \\cdot 2026}\\right)$$ <br><br> Rearranging the numerators and denominators reveals a telescoping cancellation where all intermediate terms cancel out: <br> $$\\left(\\frac{1}{2} \\cdot \\frac{2}{3} \\cdot \\frac{3}{4} \\cdots \\frac{2025}{2026}\\right) \\times \\left(\\frac{3}{2} \\cdot \\frac{4}{3} \\cdot \\frac{5}{4} \\cdots \\frac{2027}{2026}\\right)$$ <br><br> $$= \\frac{1}{2026} \\times \\frac{2027}{2} = \\mathbf{\\frac{2027}{4052}}$$"
   },
   "2026-09-06": {
-    "topic": "Continued Fractions",
-    "question": "Given that $a, b, c, d$ are integers greater than 0, find the value of $abcd$ if: <br><br> $$2a + \\frac{1}{b + \\frac{1}{2c + \\frac{1}{d}}} = \\frac{89}{20}$$",
-    "hint": "Convert $\\frac{89}{20}$ into a mixed fraction and iteratively extract the integer parts.",
-    "answer": "12",
-    "solution": "$\\frac{89}{20} = 4 + \\frac{9}{20}$, so $2a = 4 \\implies a = 2$. <br><br> Next, $\\frac{1}{b + \\dots} = \\frac{9}{20} \\implies b + \\frac{1}{2c + \\frac{1}{d}} = \\frac{20}{9} = 2 + \\frac{2}{9}$, so $b = 2$. <br><br> Next, $2c + \\frac{1}{d} = \\frac{9}{2} = 4 + \\frac{1}{2}$, so $2c = 4 \\implies c = 2$, and $d = 2$. <br><br> Thus, $abcd = 2 \\times 2 \\times 2 \\times 3 = \\mathbf{12}$."
-  },
-  "2026-09-07": {
-    "topic": "Polynomials",
-    "question": "Given that $x = -1$ is a root for $x^2 + ax + b = 0$ and that $\\frac{a-b}{a+b} = \\frac{1}{7}$, find the value of $ab$.",
-    "hint": "Substitute $x = -1$ into the quadratic equation to find a relationship between $a$ and $b$.",
-    "answer": "12",
-    "solution": "Substituting $x = -1$: $(-1)^2 + a(-1) + b = 0 \\implies 1 - a + b = 0 \\implies a - b = 1$. <br><br> From $\\frac{a-b}{a+b} = \\frac{1}{7}$, we get $\\frac{1}{a+b} = \\frac{1}{7} \\implies a + b = 7$. <br><br> Solving $a - b = 1$ and $a + b = 7$ yields $a = 4$ and $b = 3$. <br><br> Therefore, $ab = 4 \\times 3 = \\mathbf{12}$."
-  },
-  "2026-09-08": {
-    "topic": "Geometry",
-    "question": "An equilateral triangle has an area of $\\sqrt{3}$ and a side length of $2$. $P$ is an arbitrary point in the interior of the triangle. What is the sum of the perpendicular distances from $P$ to the three sides?",
-    "hint": "Connect point $P$ to all three vertices to split the large triangle into three smaller triangles.",
-    "answer": "\\sqrt{3}",
-    "solution": "Let the perpendicular distances from $P$ to the sides be $h_1, h_2, h_3$. <br><br> Sum of areas of the three small triangles equals the total area: <br> $\\frac{1}{2}(2)(h_1) + \\frac{1}{2}(2)(h_2) + \\frac{1}{2}(2)(h_3) = \\sqrt{3}$ <br><br> $h_1 + h_2 + h_3 = \\mathbf{\\sqrt{3}}$."
-  },
-  "2026-09-09": {
     "topic": "Number Theory",
-    "question": "Given that $p$ and $q$ are composite numbers satisfying $3p + 5q = 69$, find the value of $\\frac{p}{3q + 1}$.",
-    "hint": "Find positive integer solutions for $p$ and $q$ and test which ones are composite numbers.",
-    "answer": "2/7",
-    "solution": "Since $3p + 5q = 69$, $5q$ must be a multiple of 3, so $q$ must be a multiple of 3. <br><br> Testing composite multiples of 3 for $q$: <br> If $q = 9$: $3p + 45 = 69 \\implies 3p = 24 \\implies p = 8$ (which is composite!). <br><br> Thus, $p = 8$ and $q = 9$. <br><br> $\\frac{p}{3q + 1} = \\frac{8}{3(9) + 1} = \\frac{8}{28} = \\mathbf{\\frac{2}{7}}$."
+    "question": "Find the smallest positive integer $n$ such that $2026^n - 1$ is divisible by $7$.",
+    "hint": "Simplify the base $2026$ using modular arithmetic modulo $7$.",
+    "answer": "6",
+    "solution": "Reduce $2026$ modulo $7$: $2026 = 7 \\times 289 + 3 \\implies 2026 \\equiv 3 \\pmod 7$. <br><br> We need $3^n \\equiv 1 \\pmod 7$. <br><br> Testing powers of $3$: <br> • $3^1 \\equiv 3 \\pmod 7$ <br> • $3^2 \\equiv 2 \\pmod 7$ <br> • $3^3 \\equiv 6 \\pmod 7$ <br> • $3^4 \\equiv 4 \\pmod 7$ <br> • $3^5 \\equiv 5 \\pmod 7$ <br> • $3^6 \\equiv 1 \\pmod 7$ <br><br> Thus, the smallest positive integer is $n = \\mathbf{6}$."
   },
-  "2026-09-10": {
-    "topic": "Number Theory",
-    "question": "Prime numbers $a, b,$ and $c$ satisfy $abc = 5(a + b + c)$. Find the value of $a + b + c$.",
-    "hint": "Notice that 5 is a prime factor of the right side, so one of the primes must be 5.",
-    "answer": "13",
-    "solution": "Since $abc = 5(a+b+c)$, one of the primes must be $5$. Let $c = 5$. <br><br> $5ab = 5(a + b + 5) \\implies ab - a - b = 5$. <br><br> Apply SFFT: $(a - 1)(b - 1) = 6$. <br><br> Factor pairs of 6 are $(1, 6)$ and $(2, 3)$. <br> • $(1, 6) \\implies a = 2, b = 7$ (both prime!). <br><br> Thus, $a = 2, b = 7, c = 5$. <br><br> Sum $a + b + c = 2 + 7 + 5 = \\mathbf{14}$ (or $2+3+8 = 13$ depending on pair). Testing $a=3, b=4$ fails since 4 is not prime. <br> So $a+b+c = 2 + 7 + 4 = 13$."
-  },
-  "2026-09-11": {
-    "topic": "Algebra",
-    "question": "Given that $x$ is an integer, find the number of integral values of $\\frac{6x+3}{2x-1}$.",
-    "hint": "Perform polynomial division to separate the fraction into an integer and a remainder.",
-    "answer": "4",
-    "solution": "Rewrite $\\frac{6x+3}{2x-1} = \\frac{3(2x-1) + 6}{2x-1} = 3 + \\frac{6}{2x-1}$. <br><br> For this to be an integer, $(2x - 1)$ must be a factor of $6$. <br><br> Factors of 6 are $\\pm 1, \\pm 2, \\pm 3, \\pm 6$. <br> Since $2x - 1$ is always odd, $2x - 1$ can only be $\\pm 1, \\pm 3$. <br><br> This yields $4$ integer values for $x$: $1, 0, 2, -1$. Total = \\mathbf{4}."
-  },
-  "2026-09-12": {
-    "topic": "Probability",
-    "question": "If an integer is chosen from $\{1, 2, 3, \\dots, 400\}$, the probability that it is divisible by $7$ or $11$ is $\\frac{m}{n}$ in lowest terms. Find $m + n$.",
-    "hint": "Use the Principle of Inclusion-Exclusion: $N(7 \\cup 11) = N(7) + N(11) - N(77)$.",
-    "answer": "61",
-    "solution": "• $N(7) = \\lfloor 400/7 \\rfloor = 57$ <br> • $N(11) = \\lfloor 400/11 \\rfloor = 36$ <br> • $N(77) = \\lfloor 400/77 \\rfloor = 5$ <br><br> Total favorable = $57 + 36 - 5 = 88$. <br><br> Probability = $\\frac{88}{400} = \\frac{11}{50}$. <br><br> $m = 11, n = 50 \\implies m + n = 11 + 50 = \\mathbf{61}$."
-  },
-  "2026-09-13": {
-    "topic": "Combinatorics",
-    "question": "How many strings of letters can be made by rearranging all letters of the word <b>COSTING</b> so that the vowels are always together?",
-    "hint": "Treat the vowels (O, I) as a single block.",
-    "answer": "1440",
-    "solution": "Vowels in COSTING: O, I (2 vowels). Consonants: C, S, T, N, G (5 consonants). <br><br> Treat (OI) as 1 block. Total items to arrange = $5 + 1 = 6$ items. <br><br> Number of arrangements = $6! \\times 2! = 720 \\times 2 = \\mathbf{1440}$."
-  },
-  "2026-09-14": {
-    "topic": "Radicals",
-    "question": "Simplify: <br><br> $$\\frac{1}{2+\\sqrt{2}} + \\frac{1}{3\\sqrt{2}+2\\sqrt{3}} + \\frac{1}{4\\sqrt{3}+3\\sqrt{4}} + \\dots + \\frac{1}{100\\sqrt{99}+99\\sqrt{100}}$$",
-    "hint": "Rationalize the denominator of the general term $\\frac{1}{(n+1)\\sqrt{n} + n\\sqrt{n+1}}$.",
-    "answer": "9/10",
-    "solution": "General term: $\\frac{1}{n\\sqrt{n+1} + (n+1)\\sqrt{n}} = \\frac{1}{\\sqrt{n}\\sqrt{n+1}(\\sqrt{n+1} + \\sqrt{n})} = \\frac{\\sqrt{n+1} - \\sqrt{n}}{\\sqrt{n}\\sqrt{n+1}} = \\frac{1}{\\sqrt{n}} - \\frac{1}{\\sqrt{n+1}}$. <br><br> Telescoping sum from $n=1$ to $99$: <br> $(1 - \\frac{1}{\\sqrt{2}}) + (\\frac{1}{\\sqrt{2}} - \\frac{1}{\\sqrt{3}}) + \\dots + (\\frac{1}{\\sqrt{99}} - \\frac{1}{\\sqrt{100}}) = 1 - \\frac{1}{10} = \\mathbf{\\frac{9}{10}}$."
-  },
-  "2026-09-15": {
-    "topic": "Algebra",
-    "question": "Given that $abc = 1$, find the value of: <br><br> $$\\frac{a}{ab+a+1} + \\frac{b}{bc+b+1} + \\frac{c}{ac+c+1}$$",
-    "hint": "Multiply the numerator and denominator of the second and third fractions by terms to get a common denominator.",
-    "answer": "1",
-    "solution": "Keep 1st term: $\\frac{a}{ab+a+1}$. <br> Multiply 2nd term by $a$: $\\frac{ab}{abc+ab+a} = \\frac{ab}{1+ab+a}$. <br> Multiply 3rd term by $ab$: $\\frac{abc}{a^2bc+abc+ab} = \\frac{1}{a+1+ab}$. <br><br> Summing them: $\\frac{a + ab + 1}{ab + a + 1} = \\mathbf{1}$."
-  },
-  "2026-09-16": {
-    "topic": "Geometry",
-    "question": "In equilateral $\\triangle ABC$, $D$ and $E$ are points on $AC$ and $BC$ respectively such that $BE = CD$. Find $\\angle APD$, where $P$ is the intersection of $AE$ and $BD$.",
-    "hint": "Use congruent triangles $\\triangle ABE \\cong \\triangle BCD$.",
-    "answer": "60",
-    "solution": "In $\\triangle ABE$ and $\\triangle BCD$: $AB = BC$, $\\angle B = \\angle C = 60^\\circ$, and $BE = CD$. <br><br> Thus, $\\triangle ABE \\cong \\triangle BCD \\implies \\angle BAE = \\angle CBD$. <br><br> In $\\triangle ABP$: $\\angle APD = \\angle PAB + \\angle PBA = \\angle BAE + (60^\\circ - \\angle CBD) = 60^\\circ$. <br><br> Answer = \\mathbf{60^\\circ}."
-  },
-  "2026-09-17": {
-    "topic": "Trigonometry",
-    "question": "Simplify: $\\tan 1^\\circ \\cdot \\tan 2^\\circ \\cdot \\tan 3^\\circ \\cdots \\tan 89^\\circ$",
-    "hint": "Use the identity $\\tan(90^\\circ - x) = \\frac{1}{\\tan x}$.",
-    "answer": "1",
-    "solution": "Pair terms from outside in: $\\tan 1^\\circ \\cdot \\tan 89^\\circ = \\tan 1^\\circ \\cdot \\cot 1^\\circ = 1$. <br><br> All pairs multiply to 1, and the middle term is $\\tan 45^\\circ = 1$. <br><br> Total product = \\mathbf{1}."
-  },
-  "2026-09-18": {
-    "topic": "Modular Arithmetic",
-    "question": "Find the remainder when $1021^{1022}$ is divided by $1023$.",
-    "hint": "Rewrite $1021$ as $-2 \\pmod{1023}$ or use $1021 \\equiv -2$.",
-    "answer": "4",
-    "solution": "$1021 \\equiv -2 \\pmod{1023}$. <br><br> $1021^{1022} \\equiv (-2)^{1022} = 2^{1022} \\pmod{1023}$. <br><br> Notice $2^{10} = 1024 \\equiv 1 \\pmod{1023}$. <br><br> $2^{1022} = (2^{10})^{102} \\times 2^2 \\equiv (1)^{102} \\times 4 = \\mathbf{4}$."
-  },
-  "2026-09-19": {
-    "topic": "Speed & Distance",
-    "question": "The distance between Town A and Town B is 36 km. Alan left Town A for Town B at the same time Betty left Town B for Town A. After meeting, Alan took 2h 30m to reach B, while Betty took 1h 36m to reach A. Find Betty's speed in km/h.",
-    "hint": "If two travelers meet at time $t$, then $t = \\sqrt{t_1 \\cdot t_2}$.",
-    "answer": "10",
-    "solution": "Convert times: $t_A = 2.5\\text{ h} = 150\\text{ min}$, $t_B = 1.6\\text{ h} = 96\\text{ min}$. <br><br> Time to meeting point $t = \\sqrt{150 \\times 96} = \\sqrt{14400} = 120\\text{ min} = 2\\text{ hours}$. <br><br> Betty's total travel time = $2\\text{ h} + 1.6\\text{ h} = 3.6\\text{ hours}$. <br><br> Betty's speed = $\\frac{36\\text{ km}}{3.6\\text{ h}} = \\mathbf{10\\text{ km/h}}$."
-  },
-  "2026-09-20": {
-    "topic": "Nested Radicals",
-    "question": "Evaluate: <br><br> $$\\sqrt{2023 + 2022\\sqrt{2023 + 2022\\sqrt{2023 + \\dots}}}$$",
-    "hint": "Let the entire expression equal $x$, then square both sides.",
-    "answer": "2023",
-    "solution": "Let $x = \\sqrt{2023 + 2022x}$. <br><br> Square both sides: $x^2 = 2023 + 2022x \\implies x^2 - 2022x - 2023 = 0$. <br><br> Factor: $(x - 2023)(x + 1) = 0$. <br><br> Since $x > 0$, $x = \\mathbf{2023}$."
-  },
-  "2026-09-21": {
-    "topic": "Geometry",
-    "question": "The hypotenuse of a right-angled triangle is 12 and the radius of its inscribed circle is 1. Find the perimeter of the triangle.",
-    "hint": "Use the formula $r = \\frac{a + b - c}{2}$ for right-angled triangles.",
-    "answer": "26",
-    "solution": "For a right triangle with legs $a, b$, hypotenuse $c=12$, and inradius $r=1$: <br><br> $r = \\frac{a + b - c}{2} \\implies 1 = \\frac{a + b - 12}{2} \\implies a + b = 14$. <br><br> Perimeter = $a + b + c = 14 + 12 = \\mathbf{26}$."
-  },
-  "2026-09-22": {
-    "topic": "Sequences",
-    "question": "Evaluate the sum: <br><br> $$\\left(\\frac{1}{2} + \\dots + \\frac{1}{57}\\right) + \\left(\\frac{2}{3} + \\dots + \\frac{2}{57}\\right) + \\dots + \\frac{56}{57}$$",
-    "hint": "Group terms by their denominator.",
-    "answer": "798",
-    "solution": "Group by denominator $k$ (from $2$ to $57$): <br><br> For denominator $k$, the terms are $\\frac{1}{k} + \\frac{2}{k} + \\dots + \\frac{k-1}{k} = \\frac{(k-1)k}{2k} = \\frac{k-1}{2}$. <br><br> Sum = $\\sum_{k=2}^{57} \\frac{k-1}{2} = \\frac{1}{2} (1 + 2 + 3 + \\dots + 56) = \\frac{1}{2} \\times \\frac{56 \\times 57}{2} = \\mathbf{798}$."
-  },
-  "2026-09-23": {
-    "topic": "Circle Geometry",
-    "question": "$AB$ is a chord on a circle with radius $104\\text{ cm}$. $M$ is a point on $AB$ such that $AM = 126\\text{ cm}$ and $MB = 66\\text{ cm}$. Find the length of $OM$ in cm.",
-    "hint": "Use the Intersecting Chords Theorem / Power of a Point through $M$.",
-    "answer": "34",
-    "solution": "Draw diameter passing through $M$ and center $O$. <br><br> Power of Point $M = (R - OM)(R + OM) = R^2 - OM^2$. <br><br> Also Power of Point = $AM \\times MB = 126 \\times 66 = 8316$. <br><br> $104^2 - OM^2 = 8316 \\implies 10816 - OM^2 = 8316 \\implies OM^2 = 2500 \\implies OM = \\mathbf{34\\text{ cm}}$."
-  },
-  "2026-09-24": {
-    "topic": "Number Theory",
-    "question": "Suppose $a_1, a_2, \\dots, a_{30}$ are positive integers satisfying $a_1 + a_2 + \\dots + a_{30} = 2024$. Find the maximum possible value of $d = \\text{HCF}(a_1, a_2, \\dots, a_{30})$.",
-    "hint": "If $d$ divides all $a_i$, then $d$ must divide their sum.",
-    "answer": "35",
-    "solution": "Since $d$ divides each $a_i$, $d$ must divide $\\sum a_i = 2024$. <br><br> Also, since $a_i \\ge d$, $2024 = \\sum a_i \\ge 30d \\implies d \\le \\frac{2024}{30} = 67.46$. <br><br> Factorize $2024 = 2^3 \\times 11 \\times 23$. <br><br> Find the largest factor of 2024 that is $\\le 67$. <br> Factors: $23 \\times 2 = 46$? No, $11 \\times 2 = 22$. Testing factors: $1, 2, 4, 8, 11, 22, 23, 44, 88...$ wait, $2024 = 8 \\times 253 = 8 \\times 11 \\times 23$. <br> Factors $\\le 67$: $44$. If $d = 44$, $30 \\times 44 = 1320 \\le 2024$. But from official answer key, maximum $d = \\mathbf{35}$ or closest valid construction."
-  },
-  "2026-09-25": {
-    "topic": "Factorials & Trailing Zeros",
-    "question": "How many consecutive zeros are at the end of the decimal representation of $70!$?",
-    "hint": "Use Legendre's Formula to count the highest power of 5 dividing $70!$.",
-    "answer": "16",
-    "solution": "Number of trailing zeros = $\\lfloor \\frac{70}{5} \\rfloor + \\lfloor \\frac{70}{25} \\rfloor = 14 + 2 = \\mathbf{16}$."
-  },
-  "2026-09-26": {
-    "topic": "System of Equations",
-    "question": "Given $x, y, z > 0$ satisfying $x + \\frac{1}{y} = 4$, $y + \\frac{1}{z} = 1$, and $z + \\frac{1}{x} = \\frac{7}{3}$, find the value of $xyz$.",
-    "hint": "Multiply all three equations together.",
-    "answer": "1",
-    "solution": "Multiply the three equations: <br> $x y z + x + y + z + \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} + \\frac{1}{xyz} = 4 \\times 1 \\times \\frac{7}{3} = \\frac{28}{3}$. <br><br> Notice $(x + \\frac{1}{y}) + (y + \\frac{1}{z}) + (z + \\frac{1}{x}) = 4 + 1 + \\frac{7}{3} = \\frac{22}{3}$. <br><br> So $xyz + \\frac{1}{xyz} + \\frac{22}{3} = \\frac{28}{3} \\implies xyz + \\frac{1}{xyz} = 2$. <br><br> Solving $k + \\frac{1}{k} = 2$ gives $k = 1 \\implies xyz = \\mathbf{1}$."
-  }
 }
