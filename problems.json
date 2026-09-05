@@ -1,7 +1,9 @@
-"2026-09-05": {
+{
+    "2026-09-05": {
     "topic": "Number Theory",
-    "question": "Find the number of positive integers $n$ for which $n^2 + 7n + 12$ can be written in the form $k^2 + k$, where $k$ is a positive integer.",
-    "hint": "Factor $n^2 + 7n + 12$ as $(n+3)(n+4)$ and compare it to $k(k+1)$.",
-    "answer": "0",
-    "solution": "<b>Step 1: Factor the left-hand side.</b><br>Notice that $n^2 + 7n + 12 = (n+3)(n+4)$.<br><br><b>Step 2: Equate the two expressions.</b><br>$$(n+3)(n+4) = k(k+1)$$<br><br>Both sides are products of two consecutive positive integers. Since the function $f(x) = x(x+1)$ is strictly increasing for positive $x$, the corresponding terms must match directly:<br>$$n + 3 = k$$<br><br>Substituting $k = n+3$ back gives $(n+3)(n+4) = (n+3)(n+4)$, which holds for all positive integers $n$.<br><br><b>Step 3: Check boundary constraints.</b><br>Since any positive integer $n$ yields a valid integer $k = n + 3$, there are infinitely many such $n$.<br>*(Note: If restricted to $1 \\le n \\le 100$, the answer is 100).* "
+    "question": "Find the number of positive integers $n \\le 2026$ for which $n^2 + 7n + 12$ can be written in the form $k^2 + k$, where $k$ is a positive integer.",
+    "hint": "Multiply both sides by 4 to complete the square on both expressions.",
+    "answer": "2026",
+    "solution": "<b>Step 1: Complete the square.</b><br>Multiply both sides of $n^2 + 7n + 12 = k^2 + k$ by $4$:<br>$$4n^2 + 28n + 48 = 4k^2 + 4k$$<br>$$(2n + 7)^2 - 1 = (2k + 1)^2 - 1$$<br><br><b>Step 2: Solve for $k$.</b><br>$$\\implies (2n + 7)^2 = (2k + 1)^2$$<br>Since $n, k > 0$, take the positive square root:<br>$$2n + 7 = 2k + 1 \\implies k = n + 3$$<br><br><b>Step 3: Count valid solutions in the bounded domain.</b><br>For every positive integer $n$, $k = n + 3$ is automatically a valid positive integer.<br><br>Since $n$ is bounded by $1 \\le n \\le 2026$, there are exactly <b>2026</b> valid values for $n$."
   }
+}
