@@ -1,16 +1,7 @@
-{
-  "2026-09-05": {
+"2026-09-05": {
     "topic": "Number Theory",
-    "question": "What is the units digit of $7^{2026}$?",
-    "hint": "Look for a repeating pattern in the units digits of $7^1, 7^2, 7^3, 7^4, \\dots$",
-    "answer": "9",
-    "solution": "The units digits of powers of 7 follow a 4-step repeating cycle: 7, 9, 3, 1.<br><br>Divide the exponent by 4: $2026 \\div 4 = 506$ with a remainder of 2.<br><br>The second number in the cycle is <b>9</b>."
-  },
-  "2026-09-06": {
-    "topic": "Combinatorics",
-    "question": "How many 3-digit positive integers are divisible by 5 and have no repeating digits?",
-    "hint": "Break the problem into two cases based on the last digit (0 or 5).",
-    "answer": "136",
-    "solution": "A number is divisible by 5 if it ends in 0 or 5.<br><br><b>Case 1 (Ends in 0):</b> The last digit is fixed. Hundreds digit: 9 choices (1–9). Tens digit: 8 choices remaining. Total = $9 \\times 8 = 72$.<br><br><b>Case 2 (Ends in 5):</b> Hundreds digit: 8 choices (cannot be 0 or 5). Tens digit: 8 choices remaining. Total = $8 \\times 8 = 64$.<br><br>Total = $72 + 64 = 136$."
+    "question": "Find the number of positive integers $n$ for which $n^2 + 7n + 12$ can be written in the form $k^2 + k$, where $k$ is a positive integer.",
+    "hint": "Factor $n^2 + 7n + 12$ as $(n+3)(n+4)$ and compare it to $k(k+1)$.",
+    "answer": "0",
+    "solution": "<b>Step 1: Factor the left-hand side.</b><br>Notice that $n^2 + 7n + 12 = (n+3)(n+4)$.<br><br><b>Step 2: Equate the two expressions.</b><br>$$(n+3)(n+4) = k(k+1)$$<br><br>Both sides are products of two consecutive positive integers. Since the function $f(x) = x(x+1)$ is strictly increasing for positive $x$, the corresponding terms must match directly:<br>$$n + 3 = k$$<br><br>Substituting $k = n+3$ back gives $(n+3)(n+4) = (n+3)(n+4)$, which holds for all positive integers $n$.<br><br><b>Step 3: Check boundary constraints.</b><br>Since any positive integer $n$ yields a valid integer $k = n + 3$, there are infinitely many such $n$.<br>*(Note: If restricted to $1 \\le n \\le 100$, the answer is 100).* "
   }
-}
