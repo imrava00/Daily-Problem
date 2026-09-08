@@ -17,7 +17,7 @@
     "topic": "Algebra",
     "question": "Find the sum of all real solutions to the equation $x^2 - 5|x| + 6 = 0$.",
     "hint": "Substitute $y = |x|$ to turn this into a quadratic equation in terms of $y$.",
-    "answer": "\\frac{5}{7}",
+    "answer": "0",
     "solution": "Let $y = |x|$. The equation becomes $y^2 - 5y + 6 = 0$. <br><br> Factoring gives $(y - 2)(y - 3) = 0$, so $y = 2$ or $y = 3$. <br><br> Since $y = |x|$, we have $|x| = 2$ implies $x = 2$ or $x = -2$, and $|x| = 3$ implies $x = 3$ or $x = -3$. <br><br> The real solutions are $2, -2, 3,$ and $-3$. <br><br> Sum of the solutions: $2 + (-2) + 3 + (-3) = 0$."
   },
   "2026-09-09": {
@@ -31,14 +31,14 @@
     "topic": "Algebra",
     "question": "Let $a, b,$ and $c$ be the roots of the cubic equation $x^3 - 3x^2 + 5x - 7 = 0$. Find the value of $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}$.",
     "hint": "Find a common denominator for the expression and apply Vieta's formulas.",
-    "answer": "\\frac{5}{7}",
+    "answer": "5/7",
     "solution": "Combine the fractions into a single expression: <br><br> $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} = \\frac{ab + bc + ca}{abc}$ <br><br> Using Vieta's formulas for the equation $x^3 - 3x^2 + 5x - 7 = 0$: <br> • Sum of pairwise products ($ab + bc + ca$) = $5$ <br> • Product of roots ($abc$) = $7$ <br><br> Substituting these values in gives $\\mathbf{\\frac{5}{7}}$."
   },
   "2026-09-11": {
     "topic": "Trigonometry",
     "question": "If $\\sin \\theta + \\cos \\theta = \\frac{4}{3}$, find the value of $\\sin^3 \\theta + \\cos^3 \\theta$.",
     "hint": "Square the given equation to find $\\sin \\theta \\cos \\theta$, then use the sum of cubes factorization identity.",
-    "answer": "\\frac{22}{27}",
+    "answer": "22/27",
     "solution": "Square both sides of the given equation: <br><br> $(\\sin \\theta + \\cos \\theta)^2 = \\left(\\frac{4}{3}\\right)^2 \\implies 1 + 2\\sin \\theta \\cos \\theta = \\frac{16}{9}$ <br><br> This yields $2\\sin \\theta \\cos \\theta = \\frac{7}{9}$, so $\\sin \\theta \\cos \\theta = \\frac{7}{18}$. <br><br> Using the sum of cubes identity: <br> $\\sin^3 \\theta + \\cos^3 \\theta = (\\sin \\theta + \\cos \\theta)(\\sin^2 \\theta - \\sin \\theta \\cos \\theta + \\cos^2 \\theta)$ <br><br> Substituting known values: <br> $= \\left(\\frac{4}{3}\\right) \\left(1 - \\frac{7}{18}\\right) = \\frac{4}{3} \\times \\frac{11}{18} = \\mathbf{\\frac{22}{27}}$."
   }
 }
