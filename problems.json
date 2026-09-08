@@ -13,10 +13,25 @@
     "answer": "6",
     "solution": "Reduce $2026$ modulo $7$: $2026 = 7 \\times 289 + 3 \\implies 2026 \\equiv 3 \\pmod 7$. <br><br> We need $3^n \\equiv 1 \\pmod 7$. <br><br> Testing powers of $3$: <br> • $3^1 \\equiv 3 \\pmod 7$ <br> • $3^2 \\equiv 2 \\pmod 7$ <br> • $3^3 \\equiv 6 \\pmod 7$ <br> • $3^4 \\equiv 4 \\pmod 7$ <br> • $3^5 \\equiv 5 \\pmod 7$ <br> • $3^6 \\equiv 1 \\pmod 7$ <br><br> Thus, the smallest positive integer is $n = \\mathbf{6}$."
   },
-  "2026-09-08": {
+"2026-09-08": {
     "topic": "Algebra",
-    "question": "Find the sum of all real solutions to the equation $x^2 - 5|x| + 6 = 0$.",
-    "hint": "Recall that $\sqrt{x^2} = |x|",
-    "answer": "0","solution": "Let $y = |x|$. The equation becomes $y^2 - 5y + 6 = 0$.Factoring gives $(y - 2)(y - 3) = 0$, so $y = 2$ or $y = 3$.Since $y = \vert{}x\vert{}$, we have $\vert{}x\vert{} = 2 \implies x = \pm 2$, and $\vert{}x\vert{} = 3 \implies x = \pm 3$.The real solutions are $2, -2, 3,$ and $-3$.Sum of the solutions: $2 + (-2) + 3 + (-3) = \mathbf{0}$."
+    "question": "Find the sum of all real solutions to the equation x^2 - 5|x| + 6 = 0.",
+    "hint": "Substitute y = |x| to turn this into a quadratic equation in terms of y.",
+    "answer": "0",
+    "solution": "Let y = |x|. The equation becomes y^2 - 5y + 6 = 0. <br><br> Factoring gives (y - 2)(y - 3) = 0, so y = 2 or y = 3. <br><br> Since y = |x|, we have |x| = 2 implies x = 2 or x = -2, and |x| = 3 implies x = 3 or x = -3. <br><br> The real solutions are 2, -2, 3, and -3. <br><br> Sum of the solutions: 2 + (-2) + 3 + (-3) = 0."
+  },
+  "2026-09-09": {
+    "topic": "Combinatorics",
+    "question": "How many 3-digit numbers can be formed using the digits 1, 2, 3, 4, and 5 without repetition?",
+    "hint": "Use the fundamental counting principle for each of the three digit positions.",
+    "answer": "60",
+    "solution": "We need to choose 3 digits out of 5 available digits where order matters and repetition is not allowed. <br><br> - Choices for the hundreds place: 5 <br> - Choices for the tens place: 4 <br> - Choices for the units place: 3 <br><br> Multiply the choices together: 5 x 4 x 3 = 60."
+  },
+  "2026-09-10": {
+    "topic": "Geometry",
+    "question": "What is the area of a right-angled triangle with a hypotenuse of length 13 cm and one leg of length 5 cm?",
+    "hint": "Use the Pythagorean theorem to find the length of the missing leg first.",
+    "answer": "30",
+    "solution": "Let the legs be a and b, and the hypotenuse be c = 13. Given one leg a = 5. <br><br> By the Pythagorean theorem: a^2 + b^2 = c^2 implies 5^2 + b^2 = 13^2. <br><br> 25 + b^2 = 169 implies b^2 = 144 implies b = 12 cm. <br><br> The area of a right-angled triangle is 0.5 x base x height = 0.5 x 5 x 12 = 30."
   }
 }
